@@ -1,0 +1,121 @@
+[
+  {
+    "title": "JS",
+    "list": [
+        {
+            "image": "/images/icons/react.png",
+            "label": "React"
+        },
+        {
+            "image": "",
+            "label": "Vanilla JS"
+        },
+        {
+            "image": "",
+            "label": "TypeScript"
+        },
+        {
+            "image": "",
+            "label": "NextJS / Gatsby"
+        },
+        {
+            "image": "/images/icons/gsap.png",
+            "label": "GSAP"
+        },
+        {
+            "image": "/images/icons/node.png",
+            "label": "NodeJS"
+        }
+    ]
+},
+    {
+        "title": "CSS",
+        "list": [
+            {
+                "image": "",
+                "label": "Styled Components"
+            },
+            {
+                "image": "",
+                "label": "CSS Animation"
+            },
+            {
+                "image": "",
+                "label": "Modern CSS"
+            }
+        ]
+    },
+    {
+      "title": "HTML",
+      "list": [
+          {
+              "image": "/images/icons/html.png",
+              "label": "Semantic HTML"
+          },
+          {
+              "image": "/images/icons/svg.png",
+              "label": "SVG Animation"
+          }
+      ]
+  },
+    {
+        "title": "Back-End",
+        "list": [
+            {
+                "image": "",
+                "label": "REST APIs"
+            }
+        ]
+    },
+    {
+        "title": "CMS",
+        "list": [
+            {
+                "image": "/images/icons/contentful.png",
+                "label": "Contentful"
+            },
+            {
+                "image": "/images/icons/netlify.png",
+                "label": "Netlify CMS"
+            },
+            {
+                "image": "/images/icons/drupal.png",
+                "label": "Drupal"
+            }
+        ]
+    },
+    {
+        "title": "Design Tools",
+        "list": [
+            {
+                "image": "/images/icons/figma.png",
+                "label": "Figma"
+            },
+            {
+                "image": "/images/icons/photoshop.png",
+                "label": "Photoshop"
+            },
+            {
+                "image": "/images/icons/illustrator.png",
+                "label": "Adobe Illustrator"
+            },
+            {
+                "image": "/images/icons/sketch.png",
+                "label": "Sketch"
+            }
+        ]
+    },
+    {
+        "title": "Utilities",
+        "list": [
+            {
+                "image": "/images/icons/github.png",
+                "label": "GitHub"
+            },
+            {
+                "image": "/images/icons/terminal.png",
+                "label": "Terminal"
+            }
+        ]
+    }
+]

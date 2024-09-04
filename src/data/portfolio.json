@@ -1,0 +1,51 @@
+[
+  {
+    "name": "In The Works",
+    "href": "https://intheworks.helpscout.com",
+    "image": "/images/portfolio/itw.png",
+    "description": "A lovingly-crafted founder-focused blog by Help Scout.",
+    "tags": [
+      "Co-developer"
+    ],
+    "stack": [
+      "Gatsby",
+      "Contentful",
+      "React",
+      "Styled Components",
+      "react-spring"
+    ],
+    "caseStudyId": "itw"
+  },
+  {
+    "name": "Help Scout Marketing Site",
+    "description": "The marketing site for Help Scout.",
+    "href": "https://www.helpscout.com",
+    "image": "/images/portfolio/helpscout.png",
+    "tags": [
+      "Maintainer"
+    ],
+    "stack": [
+      "Gatsby",
+      "Contentful",
+      "React",
+      "Styled Components"
+    ],
+    "caseStudyId": "hs"
+  },
+  {
+    "name": "CMS Feature: Conditional Fields",
+    "description": "A proof-of-concept feature for Contentful's default entry editor.",
+    "href": "https://github.com/alexdhaynes/contentful-conditional-fields-demo",
+    "image": "/images/portfolio/contentful-demo.png",
+    "tags": [
+      "Demo",
+      "Contentful API"
+    ],
+    "stack": [
+      "TypeScript",
+      "React",
+      "Contentful API"
+    ],
+    "caseStudyId": "contentful-demo"
+  }
+]
