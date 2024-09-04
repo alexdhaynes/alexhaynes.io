@@ -87,7 +87,6 @@ const TeaserCardInnerDIV = styled.div`
     h3 {
       margin: 0;
       color: ${theme.colors.text1};
-    
     }
   }
 
