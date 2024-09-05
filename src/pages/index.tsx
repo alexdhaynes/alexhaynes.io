@@ -213,7 +213,7 @@ const Home = () => {
               <h3>What I do</h3>
               <ul>
                 <li>Work closely with Brand Marketing, Brand Design, Content, and SEO teams to translate marketing strategies and campaigns into dynamic web experiences.</li>
-                <li>Build landing pages which are visually appealing, user-friendly, responsive, accessible to assistive technology devices, and reflective of brand identity</li>
+                <li>Build landing pages which are visually appealing, user-friendly, responsive, accessible to assistive technology, and reflective of brand identity</li>
                 <li>Implement best practices in SEO and front-end optimization to improve web performance metrics.
                 </li>
                 <li>Delivering a consistent user experience across supported browsers and devices</li>
