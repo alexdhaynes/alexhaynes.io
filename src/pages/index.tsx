@@ -6,7 +6,6 @@ import Image from "next/image";
 import Footer from "../components/Footer";
 import { TeaserCard } from "../components/TeaserCard";
 import AppShell from "../components/AppShell";
-import useScrollPosition from "../hooks/useScrollPosition";
 
 import portfolioData from "../data/portfolio.json";
 import socialData from "../data/social.json";
@@ -14,8 +13,7 @@ import socialData from "../data/social.json";
 //css
 import { MEDIA_QUERIES } from "../constants";
 import { theme } from "../styles/globals.styles";
-import { useEffect } from "react";
-import CurrentYear from "../components/Footer";
+
 
 const defaultTextLinkStyle = css`
   text-decoration: underline;
@@ -69,6 +67,7 @@ const SidebarASIDE = styled.aside`
   }
 
   .sidebar-content {
+    
     ${MEDIA_QUERIES.XL} {
       position: fixed;
       width: 400px;
@@ -85,15 +84,20 @@ const SidebarASIDE = styled.aside`
     h4 {
       margin-top: 1rem;
     }
-  }
 
-  ul {
-    margin: 0;
-    padding: 0;
-    li {
-      list-style-type: none;
+   
+    ${MEDIA_QUERIES.M} {
+      p {
+        width: 70%;
+      }
+    }
+    ${MEDIA_QUERIES.XL} {
+      p {
+        width: 100%;
+      }
     }
   }
+
 `;
 
 
@@ -112,6 +116,12 @@ const MainAreaDIV = styled.div`
   ${MEDIA_QUERIES.XL} {
     padding-left: 120px;
   }
+
+  ul {
+    li {
+      margin-bottom: 1rem;
+    }
+  }
 `;
 
 const TextBlock = styled.article`
@@ -128,7 +138,7 @@ const Section = styled.section`
 const SectionHeader = styled.h2`
   /* section header */
   font-family: ${theme.fonts.serif};
-  padding-bottom: 2rem;
+  padding-bottom: 0.5rem;
   font-size: 2.5rem;
   line-height: 3rem;
 `;
@@ -137,15 +147,15 @@ const ProjectGridDIV = styled.div`
 `;
 
 const ProfilePicDIV = styled.div`
-  width: 150px;
-  height: 150px;
   margin: 20px 0 30px 0;
   position: relative;
   img {
     border-radius: 50%;
     object-fit: cover;
-    width: inherit;
-    height: inherit;
+    width: 150px;
+    height: 150px;
+    margin: 0 20px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
   }
 `;
 
@@ -163,7 +173,7 @@ const Home = () => {
 
             <ProfilePicDIV>
               <Image
-                src="/images/jpgs/profile.jpg"
+                src="/images/jpgs/alex-profile-pic-2020-yellow-bg.jpg"
                 alt="Alexandra Haynes: Profile Picture"
                 width={200}
                 height={161}
@@ -184,11 +194,7 @@ const Home = () => {
               ))}
             </p>
 
-            <ul>
-              <li className="spacious-line-height">
-                also a part-time <strong>Post-Bacc Mathematics</strong> student at Indiana University East
-              </li>
-            </ul>
+            <p className="spacious-line-height"> also a part-time <strong>Post-Bacc Mathematics</strong> student at Indiana University East</p>
             <p className="secondary-text-color">📍 Ithaca, NY</p>
             <Footer />
           </div>
