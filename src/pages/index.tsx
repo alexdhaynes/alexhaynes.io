@@ -213,10 +213,10 @@ const Home = () => {
               <h3>What I do</h3>
               <ul>
                 <li>Work closely with Brand Marketing, Brand Design, Content, and SEO teams to translate marketing strategies and campaigns into dynamic web experiences.</li>
-                <li>Build, maintain, and optimize websites and landing pages which are visually appealing, user-friendly, responsive, and reflect brand identity</li>
-                <li>Implement best practices in SEO, page speed optimization, and responsive design to improve website performance metrics.
+                <li>Build landing pages which are visually appealing, user-friendly, responsive, and reflect brand identity</li>
+                <li>Implement best practices in SEO and front-end optimization to improve web performance metrics.
                 </li>
-                <li>Ensure that all web assets are compatible across various devices and browsers, delivering a consistent user experience</li>
+                <li>Delivering a consistent user experience across supported browsers and devices</li>
                 <li>Stay up to date with the latest web development tools</li>
               </ul>
 
@@ -225,7 +225,7 @@ const Home = () => {
                 <li>Proficiency in HTML, CSS, JavaScript, TypeScript, and modern front-end frameworks (React.js)</li>
                 <li>Experience with back-end languages (Node.js, PHP, Python) and databases (MySQL, PostgreSQL, MongoDB)</li>
                 <li>Familiarity with CMS platforms (Contentful, WordPress, Drupal)</li>
-                <li>Knowledge of SEO best practices</li>
+                <li>Knowledge of SEO best practices and web performance optimization strategies</li>
                 <li>Experience with version control systems (Git)</li>
                 <li>Understanding of UX/UI design principles and ability to collaborate effectively with designers</li>
                 <li>Strong analytical and problem-solving skills with attention to detail</li>
