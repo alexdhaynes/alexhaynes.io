@@ -194,7 +194,7 @@ const Home = () => {
               ))}
             </p>
 
-            <p className="spacious-line-height"> also a part-time <strong>Post-Bacc Mathematics</strong> student at Indiana University East</p>
+            <p className="spacious-line-height"> part-time <strong>Mathematics</strong> at Indiana University East</p>
             <p className="secondary-text-color">📍 Ithaca, NY</p>
             <Footer />
           </div>
