@@ -9,6 +9,7 @@
     ],
     "stack": [
       "React",
+      "TypeScript",
       "Contentful",
       "styled-components",
       "react-spring"
@@ -17,7 +18,7 @@
   },
   {
     "name": "Help Scout Marketing Site",
-    "description": "The marketing site for Help Scout.",
+    "description": "The marketing site for Help Scout. Built components, landing pages, and contributed to new design system and Brand refresh.",
     "href": "https://www.helpscout.com",
     "image": "/images/portfolio/helpscout.png",
     "tags": [
@@ -25,6 +26,7 @@
     ],
     "stack": [
       "React",
+      "TypeScript",
       "Contentful",
       "styled-components"
     ],
