@@ -140,6 +140,7 @@ button,
 [type="reset"],
 [type="submit"] {
   -webkit-appearance: button;
+  appearance: button;
 }
 
 
@@ -194,6 +195,7 @@ textarea {
 
 [type="search"] {
   -webkit-appearance: textfield; /* 1 */
+  appearance: textfield;
   outline-offset: -2px; /* 2 */
 }
 
@@ -232,6 +234,11 @@ export const GlobalStyle = createGlobalStyle`
       scroll-behavior: smooth;
   } */
   ${normalize}
+
+  body {
+    margin: 0;
+    overscroll-behavior: none;
+  }
 
   * {
     box-sizing: border-box;
