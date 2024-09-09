@@ -194,7 +194,7 @@ const Home = () => {
               ))}
             </p>
 
-            <p className="spacious-line-height"> part-time <strong>Mathematics</strong> at Indiana University East</p>
+            <p className="spacious-line-height"> part-time <strong>Mathematics</strong> student at Indiana University East</p>
             <p className="secondary-text-color">📍 Ithaca, NY</p>
             <Footer />
           </div>
@@ -207,27 +207,19 @@ const Home = () => {
 
             <TextBlock>
               <p>
-                I’m a creative Front-end Developer with over a decade of experience. I create beautiful, user-friendly, and accessible websites that meet brand guidelines and look good on all devices. Outside of work, I am pursuing a second B.S. in Mathematics part-time.
+                I’m a creative Front-end Developer with over a decade of experience. I build beautiful, user-friendly, and accessible websites and web components that meet brand guidelines and look good on all devices. Outside of work, I am pursuing a second B.S. in Mathematics part-time.
               </p>
 
               <h3>What I do</h3>
               <ul>
-                <li>Work closely with Brand Marketing, Brand Design, Content, and SEO teams to translate marketing strategies and campaigns into dynamic web experiences.</li>
-                <li>Build landing pages which are visually appealing, user-friendly, responsive, accessible to assistive technology, and reflective of brand identity</li>
-                <li>Implement best practices in SEO and front-end optimization to improve web performance metrics.
-                </li>
-                <li>Delivering a consistent user experience across supported browsers and devices</li>
-                <li>Stay up to date with the latest web development tools</li>
+                <li>Work closely with Brand Marketing, Brand Design, Content, and SEO teams to build interactive websites and web components</li>
+                <li>Enhance and maintain custom internal design systems</li>
               </ul>
-
+            
               <h3>My skills</h3>
               <ul>
                 <li>Proficiency in HTML, CSS, JavaScript, TypeScript, and modern front-end frameworks (React.js)</li>
-                <li>Experience with back-end languages (Node.js, PHP, Python) and databases (MySQL, PostgreSQL, MongoDB)</li>
-                <li>Familiarity with CMS platforms (Contentful, WordPress, Drupal)</li>
-                <li>Knowledge of SEO best practices and web performance optimization strategies</li>
-                <li>Experience with version control systems (Git)</li>
-                <li>Understanding of UX/UI design principles and ability to collaborate effectively with designers</li>
+                <li>Give me a Figma design and I'll give you a pixel-perfect TypeScript component/landing page/website</li>
                 <li>Strong analytical and problem-solving skills with attention to detail</li>
                 <li>Excellent verbal and written communication skills and the ability to convey technical information to non-technical stakeholders</li>
           
