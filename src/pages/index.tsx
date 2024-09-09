@@ -209,6 +209,9 @@ const Home = () => {
               <p>
                 I’m a creative Front-end Developer with over a decade of experience. I build beautiful, user-friendly, and accessible websites and web components that meet brand guidelines and look good on all devices. Outside of work, I am pursuing a second B.S. in Mathematics part-time.
               </p>
+              <p>
+                <a href="#portfolio">Jump to the projects!</a>
+              </p>
 
               <h3>What I do</h3>
               <ul>
