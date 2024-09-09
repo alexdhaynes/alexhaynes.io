@@ -3,15 +3,14 @@
     "name": "In The Works",
     "href": "https://intheworks.helpscout.com",
     "image": "/images/portfolio/itw.png",
-    "description": "A lovingly-crafted founder-focused blog by Help Scout.",
+    "description": "A lovingly-crafted founder-focused blog by Help Scout. Every component built from the ground up with one other developer in three months.",
     "tags": [
       "Co-developer"
     ],
     "stack": [
-      "Gatsby",
-      "Contentful",
       "React",
-      "Styled Components",
+      "Contentful",
+      "styled-components",
       "react-spring"
     ],
     "caseStudyId": "itw"
@@ -25,10 +24,9 @@
       "Contributing developer"
     ],
     "stack": [
-      "Gatsby",
-      "Contentful",
       "React",
-      "Styled Components"
+      "Contentful",
+      "styled-components"
     ],
     "caseStudyId": "hs"
   },
