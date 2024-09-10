@@ -3,7 +3,7 @@
     "name": "In The Works",
     "href": "https://intheworks.helpscout.com",
     "image": "/images/portfolio/itw.png",
-    "description": "A lovingly-crafted founder-focused blog by Help Scout. Every component built and styled from the ground up with one other developer in three months.",
+    "description": "<span>A lovingly-crafted founder-focused blog by Help Scout. Every component built and styled from the ground up with <a href='https://www.tiuscia.com/' target='_blank'>Katia Zanotti</a> in three months.</span>",
     "tags": [
       "Co-developer"
     ],

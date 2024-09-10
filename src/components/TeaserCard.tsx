@@ -94,12 +94,16 @@ const TeaserCardInnerDIV = styled.div`
     grid-area: description;
     color: ${theme.colors.text2};
     line-height: 2rem;
+
+    a {
+      display: inline;
+    }
   }
 
 
   .teaser-card-tags {
     grid-area: tags;
-    margin-top: 1rem;
+    margin: 1rem 0 2rem 0;
 
     ${MEDIA_QUERIES.L} {
       margin-top: 0;
@@ -120,7 +124,8 @@ const TeaserCardInnerDIV = styled.div`
     margin-top: 1rem;
     color: ${theme.colors.text3};
 
-    span {
+    .teaser-card-stack-badge {
+      margin: 1rem 0;
       padding-right: 1rem;
       display: block;
       &:before {
@@ -131,6 +136,7 @@ const TeaserCardInnerDIV = styled.div`
       }
       ${MEDIA_QUERIES.L} {
         display: inline;
+        line-height: 2.5rem;
         &:before {
           display: none;
         }
@@ -148,13 +154,7 @@ const TeaserCardInnerDIV = styled.div`
     } /* end span */
   } /* end .teaser-card-stack */
 
-  .teaser-card-tags,
-  .teaser-card-stack {
-    width: 100%;
-    span {
-      font-size: 1.15rem;
-    }
-  }
+
 `;
 
 const TeaserCard = ({ name, description, href, image, tags, stack }) => {
@@ -177,7 +177,7 @@ const TeaserCard = ({ name, description, href, image, tags, stack }) => {
               <h3>{name}</h3>
             </div>
             <div className="teaser-card-description">
-              <p>{description}</p>
+              <p dangerouslySetInnerHTML={{ __html: description }} />
             </div>
             <div className="teaser-card-tags">
               {tags.map((tag, i) => (
@@ -186,7 +186,7 @@ const TeaserCard = ({ name, description, href, image, tags, stack }) => {
             </div>
             <div className="teaser-card-stack">
               {stack.map((tech, i) => (
-                <span key={`teaser-card-stack-${i}`}>{tech}</span>
+                <span className="teaser-card-stack-badge" key={`teaser-card-stack-${i}`}>{tech}</span>
               ))}
             </div>
            </div>
