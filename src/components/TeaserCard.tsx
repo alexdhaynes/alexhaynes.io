@@ -94,7 +94,10 @@ const TeaserCardInnerDIV = styled.div`
     grid-area: description;
     color: ${theme.colors.text2};
     line-height: 2rem;
-
+    
+    p {
+      margin-bottom: 2rem;
+    }
     a {
       display: inline;
     }
@@ -104,10 +107,6 @@ const TeaserCardInnerDIV = styled.div`
   .teaser-card-tags {
     grid-area: tags;
     margin: 1rem 0 2rem 0;
-
-    ${MEDIA_QUERIES.L} {
-      margin: 1rem 0;
-    }
 
     .teaser-card-tag-badge {
       padding: 0.25rem 0.75rem;
