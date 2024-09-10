@@ -10,7 +10,7 @@
     "stack": [
       "React",
       "TypeScript",
-      "Contentful",
+      "Contentful CMS",
       "styled-components",
       "react-spring"
     ],
@@ -27,24 +27,23 @@
     "stack": [
       "React",
       "TypeScript",
-      "Contentful",
+      "Contentful CMS",
       "styled-components"
     ],
     "caseStudyId": "hs"
   },
   {
     "name": "CMS Feature: Conditional Fields",
-    "description": "A proof-of-concept feature for Contentful's default entry editor.",
+    "description": "A proof-of-concept feature for Contentful CMS's default entry editor.",
     "href": "https://github.com/alexdhaynes/contentful-conditional-fields-demo",
     "image": "/images/portfolio/contentful-demo.png",
     "tags": [
-      "Demo",
-      "Contentful API"
+      "Proof of Concept"
     ],
     "stack": [
       "TypeScript",
       "React",
-      "Contentful API"
+      "Contentful CMS API"
     ],
     "caseStudyId": "contentful-demo"
   }

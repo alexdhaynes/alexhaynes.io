@@ -106,10 +106,10 @@ const TeaserCardInnerDIV = styled.div`
     margin: 1rem 0 2rem 0;
 
     ${MEDIA_QUERIES.L} {
-      margin-top: 0;
+      margin: 1rem 0;
     }
 
-    span {
+    .teaser-card-tag-badge {
       padding: 0.25rem 0.75rem;
       margin: 0 0.5rem 0 0;
       border-radius: 8px;
@@ -126,7 +126,6 @@ const TeaserCardInnerDIV = styled.div`
 
     .teaser-card-stack-badge {
       margin: 1rem 0;
-      padding-right: 1rem;
       display: block;
       &:before {
         color: ${theme.colors.accentBright};
@@ -136,14 +135,15 @@ const TeaserCardInnerDIV = styled.div`
       }
       ${MEDIA_QUERIES.L} {
         display: inline;
-        line-height: 2.5rem;
+        line-height: 2.15rem;
         &:before {
           display: none;
         }
         &:after {
           color: ${theme.colors.accentBright};
           content: "•";
-          padding-left: 1rem;
+          padding-left: 0.5rem;
+          padding-right: 0.5rem;
         }
         &:last-of-type {
           &:after {
@@ -181,7 +181,7 @@ const TeaserCard = ({ name, description, href, image, tags, stack }) => {
             </div>
             <div className="teaser-card-tags">
               {tags.map((tag, i) => (
-                <span key={`teaser-card-tag-${i}`}>{tag}</span>
+                <span className="teaser-card-tag-badge" key={`teaser-card-tag-${i}`}>{tag}</span>
               ))}
             </div>
             <div className="teaser-card-stack">
