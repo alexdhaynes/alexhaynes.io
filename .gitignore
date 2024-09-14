@@ -32,3 +32,6 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+# undertone demos
+*legacy-portfolio-data.json

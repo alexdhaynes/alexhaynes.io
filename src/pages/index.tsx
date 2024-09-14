@@ -14,7 +14,6 @@ import socialData from "../data/social.json";
 import { MEDIA_QUERIES } from "../constants";
 import { theme } from "../styles/globals.styles";
 
-
 const defaultTextLinkStyle = css`
   text-decoration: underline;
   color: ${theme.colors.link};
@@ -37,13 +36,12 @@ const PageStyle = styled.div`
 
   .horizontal-rule {
     border: 0;
-    height: 1px; 
-    margin: 50px 0; 
+    height: 1px;
+    margin: 50px 0;
     width: 100%;
-    background: ${theme.colors.text2}; 
+    background: ${theme.colors.text2};
     position: relative;
-}
-
+  }
 
   ${MEDIA_QUERIES.XL} {
     display: grid;
@@ -67,7 +65,6 @@ const SidebarASIDE = styled.aside`
   }
 
   .sidebar-content {
-    
     ${MEDIA_QUERIES.XL} {
       position: fixed;
       width: 400px;
@@ -78,14 +75,15 @@ const SidebarASIDE = styled.aside`
       line-height: 3.5rem;
       margin-bottom: 0;
     }
-    h2, h3, h4 {
+    h2,
+    h3,
+    h4 {
       font-weight: 500;
     }
-    h4 {
+    h3 {
       margin-top: 1rem;
     }
 
-   
     ${MEDIA_QUERIES.M} {
       p {
         width: 70%;
@@ -97,10 +95,7 @@ const SidebarASIDE = styled.aside`
       }
     }
   }
-
 `;
-
-
 
 const MainAreaDIV = styled.div`
   background: ${theme.colors.mainBackground};
@@ -143,8 +138,7 @@ const SectionHeader = styled.h2`
   line-height: 3rem;
 `;
 
-const ProjectGridDIV = styled.div`
-`;
+const ProjectGridDIV = styled.div``;
 
 const ProfilePicDIV = styled.div`
   margin: 20px 0 30px 0;
@@ -159,8 +153,6 @@ const ProfilePicDIV = styled.div`
   }
 `;
 
-
-
 const Home = () => {
   return (
     <AppShell title="Alex Haynes: Front-End Developer">
@@ -169,7 +161,7 @@ const Home = () => {
         <SidebarASIDE>
           <div className="sidebar-content">
             <h1>Alex Haynes</h1>
-            <h4 className="secondary-text-color">Front-end Developer</h4>
+            <h3 className="secondary-text-color">Front-end Developer</h3>
 
             <ProfilePicDIV>
               <Image
@@ -188,14 +180,14 @@ const Home = () => {
                   href={item.href}
                   title={item.name}
                   target="_blank"
-                  rel="noreferrer">
+                  rel="noreferrer"
+                >
                   {item.name}
                 </a>
               ))}
             </p>
 
-            <p className="spacious-line-height"> part-time <strong>Mathematics</strong> student at Indiana University East</p>
-            <p className="secondary-text-color">📍 Ithaca, NY</p>
+            <p className="secondary-text-color">📍 Located in Ithaca, NY</p>
             <Footer />
           </div>
         </SidebarASIDE>
@@ -207,7 +199,15 @@ const Home = () => {
 
             <TextBlock>
               <p>
-                I’m a creative Front-end Developer with over a decade of experience. I build beautiful, user-friendly, and accessible websites and web components that meet brand guidelines and look good on all devices. Outside of work, I am pursuing a second B.S. in Mathematics part-time.
+                I’m a creative Front-end Developer with over a decade of
+                experience. I build beautiful, user-friendly, and accessible web
+                components that meet brand guidelines and look good on all
+                devices.
+              </p>
+
+              <p>
+                Outside of work, I am pursuing a second B.S. in Mathematics
+                part-time.
               </p>
               <p>
                 <a href="#portfolio">Jump to the projects!</a>
@@ -215,50 +215,70 @@ const Home = () => {
 
               <h3>What I do</h3>
               <ul>
-                <li>Work closely with Brand Marketing, Brand Design, Content, and SEO teams to build interactive websites and web components</li>
+                <li>
+                  Work closely with Brand Marketing, Brand Design, Content, and
+                  SEO teams to build interactive websites and web components
+                </li>
                 <li>Enhance and maintain custom internal design systems</li>
               </ul>
-            
+
+              <h3>Where I've Worked</h3>
+              <ul>
+                <li>
+                  <strong>Help Scout</strong> | Senior Front-End Developer |
+                  <em> June 2021 - Oct 2023</em>
+                </li>
+                <li>
+                  <strong>Undertone</strong> | Senior Creative Developer |
+                  <em> Feb 2017 - June 2020</em>
+                </li>
+                <li>
+                  <strong>LivePerson</strong> | Web Developer |
+                  <em> June 2013 - June 2016</em>
+                </li>
+              </ul>
+
               <h3>My skills</h3>
               <ul>
-                <li>Proficiency in HTML, CSS, JavaScript, TypeScript, and modern front-end frameworks (React.js)</li>
-                <li>Give me a Figma design and I'll give you a pixel-perfect TypeScript component/landing page/website</li>
-                <li>Strong analytical and problem-solving skills with attention to detail</li>
-                <li>Excellent verbal and written communication skills and the ability to convey technical information to non-technical stakeholders</li>
-          
+                <li>
+                  Extensive experience in HTML, CSS, JavaScript, TypeScript, and
+                  modern front-end JavaScript frameworks (React.js)
+                </li>
+                <li>
+                  Give me a Figma design and I'll give you a pixel-perfect
+                  TypeScript component/landing page/website
+                </li>
+                <li>Strong mathematical skill and attention to detail</li>
               </ul>
 
               <div className="horizontal-rule" />
 
-              <h3>My studies</h3>
-              <p>
-                I'm currently pursuing a B.S. in Mathematics, part-time, at Indiana University East. I recieved my first B.A.  in French Literature from New York University in 2013.
-              </p>
-              
-                <strong>My coursework includes:</strong>
-                <ul>
-                  <li>Linear Algebra</li>
-                  <li>Number Theory</li>
-                  <li>Abstract Algebra</li>
-                  <li>Mathematical Logic</li>
-                </ul>
-              
-                <div className="horizontal-rule" />
+              <h3>Education</h3>
+              <ul>
+                <li>
+                  <strong>Indiana University East</strong> | B.S. Mathematics |
+                  <em> expected May 2025</em>
+                </li>
+                <li>
+                  <strong>New York University</strong> | B.A. French Literature,
+                  Web Programming Minor | <em>May 2013</em>
+                </li>
+              </ul>
 
-    
+              <div className="horizontal-rule" />
+
               <h3> Outside of work</h3>
               <p>
-                I like to hike, explore the forests and gorges of the Finger Lakes where I live 🌲, play banjo 🪕, practice movement arts like dance, yoga, and Tai Chi, make color pencil drawings, learn new things, and work
-                on my meditation practice. I've taken classes in carpentry (we built an entire Tiny House from the ground up) and natural basketry (we stripped and processed elm bark for weaving). 
-                <br /><br />
-                I am <strong>obsessed</strong> with tea (particularly wild mountain oolongs) 🍵 and tea brewing (I have one clay pot, one gaiwan, and two kyusus!). 
-              </p>
-
-              <h3> What I care about</h3>
-              <p>
-                I’m passionate about living in a way that does no harm to beings
-                or the environment. I care deeply about living in harmony and
-                communion with the land and local ecosystems. My guiding forces are compassion and harmlessness to all sentient beings.
+                I like to hike, explore the forests and gorges of the Finger
+                Lakes where I live 🌲, play banjo 🪕, practice movement arts
+                like dance, yoga, and Tai Chi, make color pencil drawings, learn
+                new things, and work on my meditation practice. I've taken
+                classes in carpentry (we built an entire Tiny House from the
+                ground up) and natural basketry (we stripped and processed elm
+                bark for weaving).
+                <br />
+                <br />I enjoy tea (particularly wild mountain oolongs) 🍵 and
+                tea brewing.
               </p>
             </TextBlock>
           </Section>
@@ -283,10 +303,6 @@ const Home = () => {
             </ProjectGridDIV>
           </Section>
         </MainAreaDIV>
-
-        {/* <DelightDIV scrolled={scrolled}>
-          <p>focus on the breath.</p>
-        </DelightDIV> */}
       </PageStyle>
     </AppShell>
   );

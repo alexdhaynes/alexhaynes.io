@@ -25,7 +25,6 @@ const TeaserCardDIV = styled.div`
   }
 `;
 
-
 const TeaserCardInnerDIV = styled.div`
   position: relative;
   margin-bottom: 80px;
@@ -53,7 +52,7 @@ const TeaserCardInnerDIV = styled.div`
     &:hover {
       filter: brightness(100%);
       transition: filter 0.25s;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle drop shadow */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle drop shadow */
     }
 
     ${MEDIA_QUERIES.XL} {
@@ -94,7 +93,7 @@ const TeaserCardInnerDIV = styled.div`
     grid-area: description;
     color: ${theme.colors.text2};
     line-height: 2rem;
-    
+
     p {
       margin-bottom: 2rem;
     }
@@ -102,7 +101,6 @@ const TeaserCardInnerDIV = styled.div`
       display: inline;
     }
   }
-
 
   .teaser-card-tags {
     grid-area: tags;
@@ -152,17 +150,13 @@ const TeaserCardInnerDIV = styled.div`
       }
     } /* end span */
   } /* end .teaser-card-stack */
-
-
 `;
 
 const TeaserCard = ({ name, description, href, image, tags, stack }) => {
   return (
     <TeaserCardDIV>
-        <TeaserCardInnerDIV>
-          <a
-          href={href}
-          target="blank">
+      <TeaserCardInnerDIV>
+        <a href={href} target="blank">
           <Image
             className="teaser-card-image"
             src={image}
@@ -170,28 +164,36 @@ const TeaserCard = ({ name, description, href, image, tags, stack }) => {
             width={360}
             height={203}
           />
-           </a>
-           <div className="teaser-card-contents">
-            <div className="teaser-card-name">
-              <h3>{name}</h3>
-            </div>
-            <div className="teaser-card-description">
-              <p dangerouslySetInnerHTML={{ __html: description }} />
-            </div>
-            <div className="teaser-card-tags">
-              {tags.map((tag, i) => (
-                <span className="teaser-card-tag-badge" key={`teaser-card-tag-${i}`}>{tag}</span>
-              ))}
-            </div>
-            <div className="teaser-card-stack">
-              {stack.map((tech, i) => (
-                <span className="teaser-card-stack-badge" key={`teaser-card-stack-${i}`}>{tech}</span>
-              ))}
-            </div>
-           </div>
-          
-        </TeaserCardInnerDIV>
-        
+        </a>
+        <div className="teaser-card-contents">
+          <div className="teaser-card-name">
+            <h3>{name}</h3>
+          </div>
+          <div className="teaser-card-description">
+            <p dangerouslySetInnerHTML={{ __html: description }} />
+          </div>
+          <div className="teaser-card-tags">
+            {tags.map((tag, i) => (
+              <span
+                className="teaser-card-tag-badge"
+                key={`teaser-card-tag-${i}`}
+              >
+                {tag}
+              </span>
+            ))}
+          </div>
+          <div className="teaser-card-stack">
+            {stack.map((tech, i) => (
+              <span
+                className="teaser-card-stack-badge"
+                key={`teaser-card-stack-${i}`}
+              >
+                {tech}
+              </span>
+            ))}
+          </div>
+        </div>
+      </TeaserCardInnerDIV>
     </TeaserCardDIV>
   );
 };

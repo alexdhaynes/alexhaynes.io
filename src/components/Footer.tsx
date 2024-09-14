@@ -3,9 +3,8 @@ import styled from "styled-components";
 import { theme } from "../styles/globals.styles"; // Adjust the path if needed
 
 const BasicFooter = styled.footer`
-  color: ${theme.colors.text3}; 
+  color: ${theme.colors.text3};
   margin-top: 80px;
-
 `;
 
 const Footer = () => {

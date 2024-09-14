@@ -6,9 +6,7 @@ const AppShell = ({ title, children }) => {
       <Head>
         <title>{title}</title>
       </Head>
-      <main>
-        {children}
-      </main>   
+      <main>{children}</main>
     </>
   );
 };
