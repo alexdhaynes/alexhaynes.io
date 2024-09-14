@@ -219,7 +219,9 @@ const Home = () => {
                   Work closely with Brand Marketing, Brand Design, Content, and
                   SEO teams to build interactive websites and web components
                 </li>
-                <li>Enhance and maintain custom internal design systems</li>
+                <li>
+                  Enhance and maintain custom internal component libraries
+                </li>
               </ul>
 
               <h3>Where I've Worked</h3>
