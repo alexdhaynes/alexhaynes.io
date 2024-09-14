@@ -1,7 +1,6 @@
 # Alexandra Haynes
-```
-yarn
-npm run dev
-```
-- this is my portfolio
+
+- this is my portfolio for 2024
+- going for "minimalist but foresty"
 - built with NextJS!
+- [alexhaynes.io](https://alexhaynes.io)
