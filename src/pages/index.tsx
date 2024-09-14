@@ -238,7 +238,7 @@ const Home = () => {
                 </li>
               </ul>
 
-              <h3>My skills</h3>
+              <h3>My Skills</h3>
               <ul>
                 <li>
                   Extensive experience in HTML, CSS, JavaScript, TypeScript, and
